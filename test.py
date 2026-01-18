@@ -1,7 +1,5 @@
-
 def add(a, b):
     return a + b
-
 
 def main():
     print("Calculator")
@@ -9,7 +7,6 @@ def main():
     while True:
         print("\nChoose an operation:")
         print("1 - Add")
-       
 
         choice = input("Enter your choice: ")
 
