@@ -1,12 +1,10 @@
-# Persistent Python Calculator
-# Member 1: Add function and main loop
 
 def add(a, b):
     return a + b
 
 
 def main():
-    print("Persistent Python Calculator")
+    print("Calculator")
 
     while True:
         print("\nChoose an operation:")
@@ -19,7 +17,7 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "5":
-            print("Calculator closed.")
+            print("Done.")
             break
 
         if choice != "1":
