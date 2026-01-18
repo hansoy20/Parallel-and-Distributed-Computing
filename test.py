@@ -1,12 +1,16 @@
 def add(a, b):
     return a + b
 
+def subtract(a, b):
+    return a - b
+
 def main():
     print("Calculator")
 
     while True:
         print("\nChoose an operation:")
         print("1 - Add")
+        print("2 - Subtract")
 
         choice = input("Enter your choice: ")
 
@@ -14,8 +18,8 @@ def main():
             print("Done.")
             break
 
-        if choice != "1":
-            print("Only ADD is available for now.")
+        if choice not in ["1", "2"]:
+            print("Invalid choice. Please select 1 or 2.")
             continue
 
         try:
@@ -25,7 +29,11 @@ def main():
             print("Invalid input.")
             continue
 
-        result = add(num1, num2)
+        if choice == "1":
+            result = add(num1, num2)
+        else:
+            result = subtract(num1, num2)
+
         print("Result:", result)
 
 
